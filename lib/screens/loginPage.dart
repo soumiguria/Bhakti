@@ -1,4 +1,4 @@
-import 'package:drema_challenge/otpPage.dart';
+import 'package:drema_challenge/screens/otpPage.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {

@@ -1,5 +1,7 @@
 import 'dart:ui';
 
+import 'package:drema_challenge/screens/homePage.dart';
+import 'package:drema_challenge/widgets/otpTextField.dart';
 import 'package:flutter/material.dart';
 
 class OtpPage extends StatelessWidget {
@@ -37,7 +39,10 @@ class OtpPage extends StatelessWidget {
                   children: [
                     Text(
                       'Enter OTP',
-                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black), // Adjust text color here
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black), // Adjust text color here
                     ),
                     SizedBox(height: 20),
                     Row(
@@ -55,15 +60,22 @@ class OtpPage extends StatelessWidget {
                     SizedBox(height: 20),
                     ElevatedButton(
                       onPressed: () {
-                        
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomePage()),
+                        );
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Color(0xFF8C0944),
-                        padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                       ),
                       child: Text(
                         'Verify',
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
+                        style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
                       ),
                     ),
                   ],
@@ -72,30 +84,6 @@ class OtpPage extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class OtpTextField extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 50,
-      height: 50,
-      decoration: BoxDecoration(
-        border: Border.all(color: Color(0xFF8C0944)),
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: TextField(
-        keyboardType: TextInputType.number,
-        maxLength: 1,
-        textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 24),
-        decoration: InputDecoration(
-          counterText: '',
-          border: InputBorder.none,
-        ),
       ),
     );
   }

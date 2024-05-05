@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:drema_challenge/loginPage.dart';
+import 'package:drema_challenge/screens/loginPage.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
