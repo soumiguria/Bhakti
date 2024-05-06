@@ -8,6 +8,7 @@ Welcome to the Bhakti App repository! This app provides various features related
 - Mantras for different regions
 - Astrologer consultation
 - Pandit booking
+- A community for all religious persons
 
 ## Screenshots
 
